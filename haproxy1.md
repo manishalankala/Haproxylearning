@@ -32,7 +32,9 @@ HTTP compression offloading.
 
 Caching proxy to return repetitive and valid responses.
 
+You can control traffic , limiting the number of simultaneous connections
 
+Providing protection from unauthorized traffic
 
 
 ## what it does 
