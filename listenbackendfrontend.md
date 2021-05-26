@@ -14,3 +14,8 @@ No backend is directly accessible by any traffic sent from the user unless a fro
 | maxconn & backlog | are the same as the ones used in the global section.  |
 | stats  | Has a couple of parameters to configure the statistical reports. auth is for specifying a username & a password for viewing the page, enable is used to activate the stats reports, show-legends is to show additional information on the page, uri is the prefix to append when trying to view the page. I have provided a sample report at the end of the article so that you’ll get a good feeling of how it operates.  |
 | server  | This is used to specify the IP addresses of each server. The balance parameter explained earlier is used here to distribute between servers you specify here.  |
+
+
+note :
+
+bind keyword receives ssl & crt to secure the connection over TLS. I will write another article regarding what it is and how you can take advantage of an HTTPS encrypted connections using certbot.
