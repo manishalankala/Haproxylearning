@@ -59,7 +59,7 @@ Converters  |
 
 put multiple flags in a single ACL
 
-| sl no  | description |
+| name  | description |
 | ------------- | ------------- |
 | -i  | Perform a case-insensitive match (so a sample of FoO will match a pattern of Foo)  |
 | -f  | Instead of matching on a string, match from an ACL file. This ACL file can have lists of IP’s, strings, regexes, etc. As long as the list doesn’t contain regexes, then the file will be loaded into the b-tree format and can handle lookups of millions of items almost instantly  |
