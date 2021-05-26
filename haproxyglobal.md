@@ -13,3 +13,6 @@
 |  nbthread |  Set the number of threads the process should run on. Only available if you specified the following option during build: USE_THREAD=1  |
 | pidfile | Write the PIDs of all the daemons into this file |
 | stats socket  | This makes it possible to bind statistics to a UNIX socket. All the options are the exact ones used in the bind keyword as well. /var/run/haproxy.sock is the path of the socket, mode is for setting the socket permission, expose-fd listeners makes it that another haproxy process will be able to read the socket, level user will only show non-sensitive stats, maxconn was explained earlier, name will be the title of the tab in your browser, tfo if allowed will be used to receive the response as early as possible (read more in the doc)  |
+
+  
+  
