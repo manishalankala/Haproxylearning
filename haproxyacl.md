@@ -157,3 +157,39 @@ tcp-request inspect-delay 10s
 use_backend be_ssl if { req.ssl_hello_type gt 0 }
 
 ~~~
+
+
+
+Note that for tcp-level routing decisions, when requiring data from the client such as needing to inspect the request, the inspect-delay statement is required to avoid HAProxy passing the phase by without any data from the client yet.
+
+
+## Setting an HTTP header with http-request set-header
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| add-header  | Content Cell  |
+| set-header | Content Cell  |
+| replace-header  | Content Cell  |
+| del-header | Content Cell  |
+
+
+## Changing the URL with http-request set-path
+
+
+
+## Updating map files with http-response set-map
+
+
+
+## Caching with http-request cache-use
+
+allowing the caching of resources based on ACLs. This, along with http-response cache-store, allows you to store select requests in HAProxy’s cache system
+
+
+## Using ACLs to block requests
+
+http-request deny
+
+http-request tarpit
+
+http-request silent-drop
