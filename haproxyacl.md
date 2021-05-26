@@ -31,4 +31,14 @@ This allows you to combine ANDs and ORs (as well as named and in-line ACLs) to b
 
 A source of information in HAProxy is known as a fetch
 
---- | ----
+
+
+| name  | description  |
+| ------------- | ------------- |
+| src  | Returns the client IP address that made the request |
+| path  | Returns the path the client requested  |
+| url_param(foo)  | Returns the value of a given URL parameter |
+| req.hdr(foo)  | Returns the value of a given HTTP request header (e.g. User-Agent or Host) |
+| ssl_fc  | A boolean that returns true if the connection was made over SSL and HAProxy is locally deciphering it
+Converters  |
+
