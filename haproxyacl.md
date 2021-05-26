@@ -165,12 +165,12 @@ Note that for tcp-level routing decisions, when requiring data from the client s
 
 ## Setting an HTTP header with http-request set-header
 
-| First Header  | Second Header |
+| Name  | description |
 | ------------- | ------------- |
-| add-header  | Content Cell  |
-| set-header | Content Cell  |
-| replace-header  | Content Cell  |
-| del-header | Content Cell  |
+| add-header  |   |
+| set-header |   |
+| replace-header  |   |
+| del-header |   |
 
 
 ## Changing the URL with http-request set-path
