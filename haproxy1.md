@@ -1,5 +1,15 @@
 
 
+
+Reference links :
+
+https://www.haproxy.com/blog/introduction-to-haproxy-acls/
+
+
+
+
+
+
 ## Advantages
 
 Proxying both TCP (IPv4 & IPv6 sockets) & HTTP (gateway) traffics and flowing the traffic in both directions.
