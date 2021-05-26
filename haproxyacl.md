@@ -42,3 +42,25 @@ A source of information in HAProxy is known as a fetch
 | ssl_fc  | A boolean that returns true if the connection was made over SSL and HAProxy is locally deciphering it
 Converters  |
 
+
+## Converters
+
+| name  | description  |
+| ------------- | ------------- |
+| lower  | Changes the case of a sample to lowercase  |
+| upper | Changes the case of a sample to uppercase  |
+| base64  | Base64 encodes the specified string (good for matching binary samples  |
+| field  | Allows you to extract a field similar to awk. For example if you have “a|b|c” as a sample and run field(|,3) on it you will be left with “c”  |
+| bytes  | Extracts some bytes from an input binary sample given an offset and length as arguments |
+| map  | Looks up the sample in the specified map file and outputs the resulting value  |
+
+
+## Flags
+
+put multiple flags in a single ACL
+
+| sl no  | description |
+| ------------- | ------------- |
+| -i  | Perform a case-insensitive match (so a sample of FoO will match a pattern of Foo)  |
+| -f  | Instead of matching on a string, match from an ACL file. This ACL file can have lists of IP’s, strings, regexes, etc. As long as the list doesn’t contain regexes, then the file will be loaded into the b-tree format and can handle lookups of millions of items almost instantly  |
+| -m  | Specify the match type. This is described in detail in the next section |
