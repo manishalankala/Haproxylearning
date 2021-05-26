@@ -1,6 +1,6 @@
 
 
-
+## Advantages
 
 Proxying both TCP (IPv4 & IPv6 sockets) & HTTP (gateway) traffics and flowing the traffic in both directions.
 
@@ -25,7 +25,7 @@ Caching proxy to return repetitive and valid responses.
 
 
 
-what it does 
+## what it does 
 
 Receive the traffic, either layer 4 (TCP) or layer 7 (HTTP)
 
@@ -37,7 +37,7 @@ Receive the response from the server and after doing some of the above steps, de
 
 
 
-capabilities
+## capabilities
 
 compression algorithm
 
@@ -51,7 +51,7 @@ systemd integration
 
 
 
-Installation 
+## Installation 
 
 http://www.haproxy.org/#down
 
