@@ -4,7 +4,7 @@ https://www.haproxy.com/blog/introduction-to-haproxy-acls/
 
 ## Formatting an ACL
 
-1.a named ACL 
+1. a named ACL 
 
 2. an anonymous or in-line ACL.
 
